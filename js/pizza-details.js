@@ -132,4 +132,12 @@ $(document).ready(function(){
     totalHelper();
     });
 
+    // Update delivery on summary section
+    $("input[name=delivery]").change(function () {
+        delivery = $('input[name=delivery]:checked').val();
+
+    if (delivery === "no") {
+        $("#yes-delivery").hide();
+        $("#summary-delivery").html(`Delivery fee - Ksh. 0`);
+
 
