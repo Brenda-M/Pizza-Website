@@ -35,5 +35,24 @@
         <label class="form-check-label" for="greenPeppers">Green Peppers - Ksh. 50</label>
       </div>
 
-      
+      <div class="delivery-block">
+        <h4 class="section-header">Would you like to have your pizza delivered? <span class="required-data">*</span></h4>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="delivery" type="radio" id="no" value="no">
+          <label class="form-check-label" for="no">No</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="delivery" type="radio" id="yes" value="yes">
+          <label class="form-check-label" for="yes">Yes</label>
+        </div>
+
+        <div id="yes-delivery">
+          <textarea class="form-control" id="delivery-address" placeholder="Enter your delivery details ie: Name, Address etc"
+            required></textarea>
+        </div>
+      </div>
+
+      <button type="button" id="order-btn" class="btn btn-success btn-block">Place Order</button>
     </div>
