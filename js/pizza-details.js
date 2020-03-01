@@ -193,3 +193,40 @@ $(document).ready(function(){
             return showError("You must select a delivery option");
         }
 
+        const newToppings = [];
+
+        $.each($("input[name='toppings']:checked"), function () {
+            newToppings.push($(this).val());
+        });
+
+        toppings = newToppings;
+
+        // Get new total
+        totalHelper();
+
+        // Build out the order modal content
+        const deliveryAddress = $("#delivery-address").val();
+
+        $("#order-summary-name").html(pizzaName);
+        $("#order-summary-size").html(`<b>Size</b> <br/> ${pizzaSize}`);
+        $("#order-summary-crust").html(`<b>Crust Type</b> <br/> ${crustType}`);
+        $("#order-summary-toppings").html(`<b>Toppings</b> <br/> ${toppings}`);
+        $("#order-summary-quantity").html(`<b>Quantity</b> <br/> ${quantity}`);
+        $("#order-summary-total").html(`<b>Total</b> <br/> Ksh. ${Pizza.prototype.orderTotal}`);
+
+        if (delivery === "yes") {
+        $("#order-summary-delivery-fee").html(`<b>Delivery Fee</b> <br/> Ksh. ${Pizza.prototype.deliveryPrice}`);
+        } else {
+        $("#order-summary-delivery-fee").html(`<b>Delivery Fee</b> <br/> Ksh. 0`);
+        }
+
+        $("#order-summary-delivery-address").html(`<b>Delivery Address</b> <br/> ${deliveryAddress}`);
+
+        // Show order modal
+        $('#orderModal').modal('show');
+    }
+
+    $("#order-btn").click(function () {
+        placeOrder();
+    });
+});
