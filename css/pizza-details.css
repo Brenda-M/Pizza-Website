@@ -1,3 +1,23 @@
+.logo{
+    width: 50px;
+}
+
+ul{
+    float:right;
+}
+
+.nav-item:hover{
+  background: #1b9bff;
+  transition: .5s;
+  margin-right:4px;
+}
+
+nav a{
+  color: white;
+  font-size: 15px;
+  border-radius:3px;
+  text-transform: uppercase;
+}
 error-container {
   position: fixed;
   top: 50px;

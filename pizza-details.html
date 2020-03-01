@@ -9,17 +9,25 @@
 
 <body>
     <!-- Navigation -->
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-        </li>
-    </ul>
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="images/pizza.png" class="logo" alt="logo" class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
+                <span class="text-uppercase font-weight-bold">PIzza Box</span>
+            </a>
+    
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="error-container"></div>
 
@@ -28,7 +36,7 @@
         <div class="col-md-7 order-details">
             <h3 id="pizza-name"></h3>
 
-            <img src="img/pizza1.jpg" class="pizza-img" alt="pizza1" />
+            <img src="images/details.jpg" class="pizza-img" alt="pizza1" />
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
