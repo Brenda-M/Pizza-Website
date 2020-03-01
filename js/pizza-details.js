@@ -27,5 +27,13 @@ $(document).ready(function(){
         { name: "greenPeppers", price: 50 }
     ];
 
+    Pizza.prototype.getTotal = function () {
+        let total = 0;
+
+        if (this.size) {
+            cont pizzaSize
+        }
+    }
+
 
 })

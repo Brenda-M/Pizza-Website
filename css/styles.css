@@ -1,11 +1,25 @@
-/* .nav-item{
-    float: right;
-} */
 
 .logo{
     width: 100px;
 }
 .card{
     width: 18rem;
-    clear: 
+    margin-top: 40px;
+    background-color: #bdbdbd;
+}
+
+.about-us{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+}
+body{
+    background-color: #777;
+}
+
+
+footer{
+    background-color: aqua;
+    height: 60px;
 }
