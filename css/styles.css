@@ -1,23 +1,29 @@
 
 .logo{
-    width: 80px;
+    width: 50px;
 }
 
 .carousel-inner .carousel-item {
-max-height: 625px;
+    max-height: 625px;
+
+
 }
 
 ul{
     float:right;
 }
 
-/* a.active, a:hover{
+.nav-item:hover{
   background: #1b9bff;
   transition: .5s;
-} */
+  margin-right:4px;
+}
 
-.menu:hover{
-    transition: .5s;
+nav a{
+  color: white;
+  font-size: 15px;
+  border-radius:3px;
+  text-transform: uppercase;
 }
 
 .card{
@@ -28,36 +34,43 @@ ul{
 
 .about-us{
     text-align: center;
-    color: white;
     font-size: 15px;
     line-height: 1.8;
+}
+
+.menu{
+    background-color: #353839;
+
 }
 /* body{
     background-color: #353839;
 } */
 
-.form{
+/* .form{
     width: 0 auto;
     display: inline-block;
     color: white;
     text-align: center;
-}
-
+} */
+/* 
 textarea{
     resize: none;
     border: 1px solid white;
     margin-top: 30px;
     margin-bottom: 20px; 
-}
+} */
 
 
 footer{
-    background-color: aqua;
-    height: 60px;
+    background-color: aquamarine;
+    height: 90px;
+    margin-top: 40px;
 }
 
 .title{
     font-weight: bold;
     text-align: center;
 }
+
+
 
