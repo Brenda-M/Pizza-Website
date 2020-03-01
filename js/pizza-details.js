@@ -6,7 +6,7 @@ $(document).ready(function(){
         this.quantity = quantity;
     }
 
-    Pizza.prototype.deliveryPrice = 150;
+    Pizza.prototype.deliveryPrice = 200;
 
     Pizza.prototype.orderTotal = 0;
 
@@ -17,7 +17,15 @@ $(document).ready(function(){
         { size: "extralarge", price: 1200 },
     ];
 
-    
+    Pizza.prototype.toppings = [
+        { name: "pepperoni", price: 60 },
+        { name: "mushrooms", price: 70 },
+        { name: "onions", price: 50 },
+        { name: "sausage", price: 60 },
+        { name: "extraCheese", price: 100 },
+        { name: "blackOlives", price: 80 },
+        { name: "greenPeppers", price: 50 }
+    ];
 
 
 })
