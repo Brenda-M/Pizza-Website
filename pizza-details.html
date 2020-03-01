@@ -96,3 +96,25 @@
 
       <button type="button" id="order-btn" class="btn btn-success btn-block">Place Order</button>
     </div>
+
+    <div class="col-md-4 order-summary">
+        <div class="card">
+          <div class="card-header">Order Summary</div>
+  
+          <div class="card-body">
+            <h5 class="card-title" id="summary-name"></h5>
+            <p class="card-text" id="summary-size"></p>
+            <p class="card-text" id="summary-crust"></p>
+            <p class="card-text" id="summary-toppings"></p>
+            <p class="card-text" id="summary-delivery"></p>
+  
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" class="form-control" id="quantity" value="1" min="1" />
+            </div>
+          </div>
+  
+          <div class="card-footer text-muted" id="summary-total">Total</div>
+        </div>
+      </div>
+    </div>
