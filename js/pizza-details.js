@@ -140,4 +140,28 @@ $(document).ready(function(){
         $("#yes-delivery").hide();
         $("#summary-delivery").html(`Delivery fee - Ksh. 0`);
 
+        // Get new total
+        totalHelper();
+    } else if (delivery === "yes") {
+        $("#yes-delivery").show();
+        $("#summary-delivery").html(`Delivery fee - Ksh. ${Pizza.prototype.deliveryPrice}`);
 
+        // Get new total
+        totalHelper();
+        }
+    });
+
+    // Update quantity
+    $("#quantity").change(function () {
+        const newQuantity = $('#quantity').val();
+    
+        if (newQuantity < 1) {
+            quantity = 1;
+            $('#quantity').val(1);
+        } else {
+            quantity = newQuantity;
+        }
+
+    // Get new total
+    totalHelper();
+    });
