@@ -93,3 +93,26 @@ $(document).ready(function(){
         
         $("#summary-total").html(`Total - Ksh. ${newTotal}`);
     }
+    
+    function totalHelper() {
+        const newPizza = new Pizza(pizzaSize, crustType, toppings, quantity, delivery);
+        const newTotal = newPizza.getTotal();
+
+        $("#summary-total").html(`Total - Ksh. ${newTotal}`);
+    }
+    
+        // Get new total
+        totalHelper();
+    });
+
+    // Update crust type on summary section
+    $("input[name=crustType]").change(function () {
+        crustType = $('input[name=crustType]:checked').val();
+
+        $("#summary-crust").html(`Crust - ${crustType}`);
+
+    // Get new total
+    totalHelper();
+    });
+
+
