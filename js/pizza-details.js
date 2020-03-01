@@ -86,3 +86,10 @@ $(document).ready(function(){
     let delivery = "";
     let quantity = 1;
     let toppings = [];
+    
+    function totalHelper() {
+        const newPizza = new Pizza(pizzaSize, crustType, toppings, quantity, delivery);
+        const newTotal = newPizza.getTotal();
+        
+        $("#summary-total").html(`Total - Ksh. ${newTotal}`);
+    }
