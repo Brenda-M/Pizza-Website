@@ -31,8 +31,42 @@ $(document).ready(function(){
         let total = 0;
 
         if (this.size) {
-            cont pizzaSize
+            const pizzaSize = this.size;
+
+            const cost = Pizza.prototype.pizzaSizePrices.find(function (p) {
+                return p.size === pizzaSize;
+            });
+
+            total = total + cost.price;
         }
+    }
+
+    if (this.toppings) {     
+        let toppingsTotal = 0;
+        const pizzaToppings = this.toppings;
+  
+        for (let i = 0; i < pizzaToppings.length; i++) {
+            const topping = Pizza.prototype.toppingsPrices.find(function (p) {
+                return p.name === pizzaToppings[i].trim();
+            });
+            
+            toppingsTotal = toppingsTotal + topping.price;
+        }
+  
+        total = total + toppingsTotal;
+    }
+
+    total = total * this.quantity;
+
+    if (this.isDelivery === "yes") {
+        total = total + Pizza.prototype.deliveryPrice;
+      } else {
+        total = total + 0;
+      }
+  
+      Pizza.prototype.orderTotal = total;
+  
+      return total;
     }
 
 
