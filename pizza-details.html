@@ -11,143 +11,163 @@
     <!-- Navigation -->
     <ul class="nav">
         <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link active" href="/">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="/about.html">About</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
         </li>
     </ul>
-    
+
     <div class="error-container"></div>
-    
-    <h4 class="section-header">Choose Your Pizza Size <span class="required-data">*</span></h4>
 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeSmall" value="small">
-        <label class="form-check-label" for="sizeSmall">Small - Ksh. 550</label>
-    </div>
+    <!-- Pizza Details -->
+    <div class="row">
+        <div class="col-md-7 order-details">
+            <h3 id="pizza-name"></h3>
 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeMedium" value="medium">
-        <label class="form-check-label" for="sizeMedium">Medium - Ksh. 850</label>
-    </div>
+            <img src="img/pizza1.jpg" class="pizza-img" alt="pizza1" />
 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeLarge" value="large">
-        <label class="form-check-label" for="sizeLarge">Large - Ksh. 1050</label>
-    </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeExtraLarge" value="extraLarge">
-        <label class="form-check-label" for="sizeExtraLarge">Extra Large - Ksh. 1200</label>
-    </div>
-
-    <h4 class="section-header">Select Crust Type <span class="required-data">*</span></h4>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" name="crustType" type="radio" id="typeCrispy" value="crispy">
-            <label class="form-check-label" for="typeCrispy">Crispy</label>
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" name="crustType" type="radio" id="typeStuffed" value="stuffed">
-            <label class="form-check-label" for="typeStuffed">Stuffed</label>
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" name="crustType" type="radio" id="typeGluttenFree" value="gluttenFree">
-            <label class="form-check-label" for="typeGluttenFree">Gluten Free</label>
-        </div>
-
-    <h4 class="section-header">Select Any Extra Toppings</h4>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="pepperoni" id="pepperoni">
-            <label class="form-check-label" for="pepperoni">Pepperoni - Ksh. 60</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="mushrooms" id="mushrooms">
-            <label class="form-check-label" for="mushrooms">Mushrooms - Ksh. 70</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="onions" id="onions">
-            <label class="form-check-label" for="onions">Onions - Ksh 50</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="sausage" id="sausage">
-            <label class="form-check-label" for="sausage">Sausage - Ksh. 60</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="extraCheese" id="extraCheese">
-            <label class="form-check-label" for="extraCheese">Extra Cheese - Ksh. 100</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="blackOlives" id="blackOlives">
-            <label class="form-check-label" for="blackOlives">Black Olives - Ksh. 80</label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" name="toppings" type="checkbox" value="greenPeppers" id="greenPeppers">
-            <label class="form-check-label" for="greenPeppers">Green Peppers - Ksh. 50</label>
-        </div>
-
-        <div class="delivery-block">
-            <h4 class="section-header">Would you like to have your pizza delivered? <span class="required-data">*</span></h4>
+            <h4 class="section-header">Choose Your Pizza Size <span class="required-data">*</span></h4>
 
             <div class="form-check form-check-inline">
-            <input class="form-check-input" name="delivery" type="radio" id="no" value="no">
-            <label class="form-check-label" for="no">No</label>
+                <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeSmall" value="small">
+                <label class="form-check-label" for="sizeSmall">Small - Ksh. 550</label>
             </div>
 
             <div class="form-check form-check-inline">
-            <input class="form-check-input" name="delivery" type="radio" id="yes" value="yes">
-            <label class="form-check-label" for="yes">Yes</label>
+                <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeMedium" value="medium">
+                <label class="form-check-label" for="sizeMedium">Medium - Ksh. 850</label>
             </div>
 
-            <div id="yes-delivery">
-            <textarea class="form-control" id="delivery-address" placeholder="Enter your delivery details ie: Name, Address etc"
-                required></textarea>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeLarge" value="large">
+                <label class="form-check-label" for="sizeLarge">Large - Ksh. 1050</label>
             </div>
-        </div>
 
-        <button type="button" id="order-btn" class="btn btn-success btn-block">Place Order</button>
-        </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="pizzaSizes" type="radio" id="sizeExtraLarge" value="extraLarge">
+                <label class="form-check-label" for="sizeExtraLarge">Extra Large - Ksh. 1200</label>
+            </div>
 
-        <div class="col-md-4 order-summary">
-            <div class="card">
-            <div class="card-header">Order Summary</div>
-    
-            <div class="card-body">
-                <h5 class="card-title" id="summary-name"></h5>
-                <p class="card-text" id="summary-size"></p>
-                <p class="card-text" id="summary-crust"></p>
-                <p class="card-text" id="summary-toppings"></p>
-                <p class="card-text" id="summary-delivery"></p>
-    
-                <div class="form-group">
-                <label for="quantity">Quantity</label>
-                <input type="number" class="form-control" id="quantity" value="1" min="1" />
+            <h4 class="section-header">Select Crust Type <span class="required-data">*</span></h4>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="crustType" type="radio" id="typeCrispy" value="crispy">
+                <label class="form-check-label" for="typeCrispy">Crispy</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="crustType" type="radio" id="typeStuffed" value="stuffed">
+                <label class="form-check-label" for="typeStuffed">Stuffed</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" name="crustType" type="radio" id="typeGluttenFree" value="gluttenFree">
+                <label class="form-check-label" for="typeGluttenFree">Gluten Free</label>
+            </div>
+
+
+            <h4 class="section-header">Select Any Extra Toppings</h4>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="pepperoni" id="pepperoni">
+                <label class="form-check-label" for="pepperoni">Pepperoni - Ksh. 60</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="mushrooms" id="mushrooms">
+                <label class="form-check-label" for="mushrooms">Mushrooms - Ksh. 80</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="onions" id="onions">
+                <label class="form-check-label" for="onions">Onions - Ksh 50</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="sausage" id="sausage">
+                <label class="form-check-label" for="sausage">Sausage - Ksh. 70</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="extraCheese" id="extraCheese">
+                <label class="form-check-label" for="extraCheese">Extra Cheese - Ksh. 100</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="blackOlives" id="blackOlives">
+                <label class="form-check-label" for="blackOlives">Black Olives - Ksh. 80</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="toppings" type="checkbox" value="greenPeppers" id="greenPeppers">
+                <label class="form-check-label" for="greenPeppers">Green Peppers - Ksh. 80</label>
+            </div>
+
+            <div class="delivery-block">
+                <h4 class="section-header">Would you like to have your pizza delivered? <span
+                        class="required-data">*</span></h4>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="delivery" type="radio" id="no" value="no">
+                    <label class="form-check-label" for="no">No</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="delivery" type="radio" id="yes" value="yes">
+                    <label class="form-check-label" for="yes">Yes</label>
+                </div>
+
+                <div id="yes-delivery">
+                    <textarea class="form-control" id="delivery-address"
+                        placeholder="Enter your delivery details ie: Name, Address etc" required></textarea>
                 </div>
             </div>
-    
-            <div class="card-footer text-muted" id="summary-total">Total</div>
-            </div>
-        </div>
+
+            <button type="button" id="order-btn" class="btn btn-success btn-block">Place Order</button>
         </div>
 
-        <!-- Order Modal -->
-        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
+        <!-- Summary section -->
+        <div class="col-md-4 order-summary">
+            <div class="card">
+                <div class="card-header">Order Summary</div>
+
+                <div class="card-body">
+                    <h5 class="card-title" id="summary-name"></h5>
+                    <p class="card-text" id="summary-size"></p>
+                    <p class="card-text" id="summary-crust"></p>
+                    <p class="card-text" id="summary-toppings"></p>
+                    <p class="card-text" id="summary-delivery"></p>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" value="1" min="1" />
+                    </div>
+                </div>
+
+                <div class="card-footer text-muted" id="summary-total">Total</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h5 class="modal-title" id="orderModalTitle">Order Summary</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -155,20 +175,20 @@
                 </div>
 
                 <div class="modal-body order-summary-body">
-                <h3 id="order-summary-name"></h3>
-                <p id="order-summary-size"></p>
-                <p id="order-summary-crust"></p>
-                <p id="order-summary-toppings"></p>
-                <p id="order-summary-quantity"></p>
-                <p id="order-summary-total"></p>
-                <p id="order-summary-delivery-fee"></p>
-                <p id="order-summary-delivery-address"></p>
+                    <h3 id="order-summary-name"></h3>
+                    <p id="order-summary-size"></p>
+                    <p id="order-summary-crust"></p>
+                    <p id="order-summary-toppings"></p>
+                    <p id="order-summary-quantity"></p>
+                    <p id="order-summary-total"></p>
+                    <p id="order-summary-delivery-fee"></p>
+                    <p id="order-summary-delivery-address"></p>
                 </div>
 
                 <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </body>

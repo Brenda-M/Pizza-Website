@@ -12,26 +12,22 @@
 
     <body>
         <!-- Navigation -->
-        <div class="container">
-            <ul class="nav">
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <!-- Logo Image -->
+                    <img src="images/logo.png" alt="logo" class="logo">
 
-                <img src="images/logo.png" alt="logo" class="logo">
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- Carousel -->
     <div id="homepageCarousel" class="carousel slide" data-ride="carousel">
@@ -78,7 +74,7 @@
     <div class="container about-us">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="title">ABOUT US</h2>
+                <h2 class="title" id="about">ABOUT US</h2>
                 <p> A warm welcome to you from Pizza Box. We opened our doors in 2013 to offer a unique 
                     upscale casual dining experience.We aim to combine tradition with creativity when crafting 
                     our pizzas using only the freshest and finest ingredients,locally-sourced when in season, and 
@@ -94,37 +90,37 @@
     </div>
         <!-- Pizza Menu -->
     <div class="container menu">
-        <h2>Pizza Menu</h2>
+        <h2 class="title">Pizza Menu</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/AlohaBBQ.jpeg" class="card-img-top" alt="pepperoniPizza">
+                    <img src="images/AlohaBBQ.jpeg" class="card-img-top" alt="alohaBbq">
                     <div class="card-body">
                         <h5 class="card-title">Aloha BBQ Chicken</h5>
                         <p>BBQ sauce, premium mozzarella, grilled chicken, pineapple & bacon.</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=alohabbq" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/BBQChicken.jpeg" class="card-img-top" alt="pepperoniPizza">
+                    <img src="images/BBQChicken.jpeg" class="card-img-top" alt="bbqChicken">
                     <div class="card-body">
                         <h5 class="card-title">BBQ Chicken</h5>
                         <p>BBQ sauce, premium mozzarella, grilled chicken, bacon & red onions</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=bbqChicken" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/BLT.jpeg" class="card-img-top" alt="doubleCheese">
+                    <img src="images/BLT.jpeg" class="card-img-top" alt="blt">
                     <div class="card-body">
                         <h5 class="card-title">BLT</h5>
-                        <p>Premium mozzarella, bacon, lettuce, tomatoes & mayo</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <p>Smoked mozzarella, bacon, lettuce, tomatoes, red onions, mayoBBQ sauce, and cilantro.</p>
+                        <a href="/pizza-details.html?pizza=blt" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -133,33 +129,33 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/chickenParmesan.jpeg" class="card-img-top" alt="magheritahDicedTomato">
+                    <img src="images/chickenParmesan.jpeg" class="card-img-top" alt="chickenParmesan">
                     <div class="card-body">
                         <h5 class="card-title">Chicken Parmesan</h5>
                         <p>Pizza sauce, premium mozzarella, grilled chicken, tomatoes, buttered crust & shredded parmesan</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=chickenParmesan" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/gluttenFree.jpeg" class="card-img-top" alt="mexicanChicken">
+                    <img src="images/gluttenFree.jpeg" class="card-img-top" alt="buildyourown">
                     <div class="card-body">
                         <h5 class="card-title">Build Your Own Pizza</h5>
                         <p>Create your own pizza with your choice of delicious crusts, sauces, & premium quality ingredients</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=buildyourown" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/Hawaian.jpeg" class="card-img-top" alt="periperiChicken">
+                    <img src="images/Hawaian.jpeg" class="card-img-top" alt="hawaiian">
                     <div class="card-body">
                         <h5 class="card-title">Hawaiian</h5>
-                        <p>Pizza sauce, premium mozzarella, ham, bacon & pineapple</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <p>Combines pizza sauce, cheese, cooked ham, pineapple, and premium mozzarelle</p>
+                        <a href="/pizza-details.html?pizza=hawaiian" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -168,22 +164,22 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/deepDish.jpeg" class="card-img-top" alt="pepperoniPizza">
+                    <img src="images/deepDish.jpeg" class="card-img-top" alt="deepdish">
                     <div class="card-body">
                         <h5 class="card-title">Deep Dish</h5>
                         <p>Small deep dish pizza with premium mozzarella plus any other three topping of your choice</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=deepdish" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/cornerPizza.jpeg" class="card-img-top" alt="pepperoniPizza">
+                    <img src="images/cornerPizza.jpeg" class="card-img-top" alt="eightcorner">
                     <div class="card-body">
                         <h5 class="card-title">8 Corner Pizzza</h5>
                         <p>8 deep dish pieces with premium mozzarella & your choice of toppings</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=8corner" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -194,7 +190,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Tropical Vegie</h5>
                         <p>Pizza sauce, premium mozzarella, onions, green peppers & mild peppers</p>
-                        <a href="/pizza-details.html?pizza=Pizza1" class="btn btn-primary">Order</a>
+                        <a href="/pizza-details.html?pizza=vegie" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -202,6 +198,32 @@
     </div>
     
     <!--Contact Us-->
+
+    <div class="container-fluid contact-us" id="blanks">
+        <h2 class="title"> CONTACT US</h2>
+    
+        <form class="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="name" name="FNAME" placeholder="Name..." required>
+                </div>
+    
+                <div class="col-md-6">
+                    <input type="email" class="form-control" id="email" name="EMAIL" placeholder="Email.." required>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea class="form-control" id="message" rows="10" placeholder="Your message here"
+                        name="MMERGE2"></textarea>
+                </div>
+            </div>
+    
+            <button type="submit" id="submit" class="btn btn-primary submitButton">SUBMIT</button>
+        </form>
+    </div>
+
     <footer>
         <div class="icons">
             <a href="#" class="fa fa-facebook"></a>

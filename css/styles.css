@@ -1,7 +1,21 @@
 
 .logo{
-    width: 100px;
+    width: 80px;
 }
+
+ul{
+    float:right;
+}
+
+a.active, a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.card:hover{
+    transition: .5s;
+}
+
 .card{
     width: 18rem;
     margin-top: 40px;
@@ -14,12 +28,31 @@
     font-size: 15px;
     line-height: 1.8;
 }
-body{
-    background-color: #777;
+/* body{
+    background-color: #353839;
+} */
+
+.form{
+    width: 0 auto;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+    border: 1px solid white;
+    margin-top: 30px;
+    margin-bottom: 20px; 
 }
 
 
 footer{
     background-color: aqua;
     height: 60px;
+}
+
+.title{
+    font-weight: bold;
+    text-align: center;
 }
