@@ -165,3 +165,18 @@ $(document).ready(function(){
     // Get new total
     totalHelper();
     });
+
+    //display message when user fails to input data
+    function showError(message) {
+        $(".error-container").fadeIn();
+
+        $(".error-container").html(`
+        <div class="alert alert-danger" role="alert">
+            ${message}
+        </div>
+    `   );
+
+        setTimeout(function () {
+            $(".error-container").fadeOut();
+        }, 5000);
+    }
