@@ -180,3 +180,16 @@ $(document).ready(function(){
             $(".error-container").fadeOut();
         }, 5000);
     }
+
+    function placeOrder() {
+        if (!pizzaSize) {
+            return showError("You must select a pizza size");
+        }
+        if (!crustType) {
+            return showError("You must select a crust type");
+        }
+
+        if (!delivery) {
+            return showError("You must select a delivery option");
+        }
+
