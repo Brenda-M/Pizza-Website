@@ -69,5 +69,20 @@ $(document).ready(function(){
       return total;
     }
 
-
-})
+    //Get pizza name from url
+    const urlParams = new URLSearchParams(window.location.search);
+    const pizzaName = urlParams.get("pizza");
+    
+    // Add pizza name to html
+    $("#pizza-name").html(pizzaName);
+    $("#summary-name").html(pizzaName);
+    
+    // Hide delivery address input
+    $("#yes-delivery").hide();
+    
+    // Declare variables
+    let pizzaSize = "";
+    let crustType = "";
+    let delivery = "";
+    let quantity = 1;
+    let toppings = [];
