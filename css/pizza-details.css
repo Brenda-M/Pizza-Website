@@ -1,0 +1,37 @@
+error-container {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 10000;
+}
+
+.pizza-img {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.order-details, .order-summary {
+  padding: 50px;
+}
+
+.section-header {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#order-btn {
+  margin-top: 50px;
+}
+
+#yes-delivery {
+  margin-top: 20px;
+}
+
+#yes-delivery > textarea {
+  height: 150px;
+  resize: none;
+}
+
+.required-data {
+  color: red;
+}
