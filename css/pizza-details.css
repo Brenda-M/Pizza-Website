@@ -59,3 +59,15 @@ error-container {
 body{
   background-color: bisque;
 }
+
+ .subtitle, .section-header {
+  font-family: 'Lance-Sans-Regular';
+  font-weight: bold;
+
+}
+
+.subtitle{
+  font-size:3.25rem;
+  line-height: 64px;
+
+}
