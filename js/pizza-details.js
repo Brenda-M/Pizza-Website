@@ -227,6 +227,7 @@ $(document).ready(function () {
         $('#orderModal').modal('show');
     }
 
-
+    $("#order-btn").click(function () {
+        placeOrder();
     });
 });
