@@ -42,7 +42,6 @@ nav a{
     background-color: #353839;
     padding-bottom: 50px;
     padding-top: 40px;
-
 }
 
 footer{
@@ -54,16 +53,12 @@ footer{
     padding-bottom: 30px;
 }
 
-
 .title{
     font-weight: bold;
     text-align: center;
 }
 
-
 .carousel-caption{
-    /* color: #ff00ff; */
-    /* color: #FF0090; */
     color: #D6006E;
     font-size: 30px;
     font-weight: 900;
@@ -71,12 +66,9 @@ footer{
 
 .caption{
      font-family: 'Knewave', ;
-     font-size: 4.25rem;
-     
-
+     font-size: 4.25rem;    
 }
 
-h5{
-   
+h5{  
     font-weight: bold;
 }

@@ -18,7 +18,8 @@ nav a{
   border-radius:3px;
   text-transform: uppercase;
 }
-error-container {
+
+.error-container {
   position: fixed;
   top: 50px;
   right: 50px;
@@ -60,7 +61,7 @@ body{
   background-color: bisque;
 }
 
- .subtitle, .section-header {
+.subtitle, .section-header {
   font-family: 'Lance-Sans-Regular';
   font-weight: bold;
 
