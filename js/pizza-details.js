@@ -230,4 +230,6 @@ $(document).ready(function () {
     $("#order-btn").click(function () {
         placeOrder();
     });
+
+    document.getElementById("myForm").reset(); 
 });
