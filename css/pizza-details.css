@@ -87,7 +87,7 @@ nav ul li a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
-background-color: #666666;
+  background-color: #666666;
 }
 
 ul{

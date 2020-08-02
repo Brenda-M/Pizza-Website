@@ -317,6 +317,8 @@ nav ul li a:hover {
     background-size: cover;
     position: relative;
     margin-top: 3rem;
+    background-blend-mode: multiply;
+    background-color: #666666;
 }
 
 .locations::before{
@@ -347,13 +349,17 @@ nav ul li a:hover {
 .loc-title{
     padding-top: 40px;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* jobs */
 .jobs > button{
     padding: .5rem;
     margin-top: 1rem;
+    background-color: tomato;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
 }
 
 .icons{
@@ -361,6 +367,7 @@ nav ul li a:hover {
     padding-bottom: 30px;
     margin: .2rem auto;
 }
+
 
 footer{
     padding: 8px;
