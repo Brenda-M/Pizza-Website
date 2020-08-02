@@ -67,8 +67,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
   font-size: 16px;
+}
+
+nav ul li a:hover {
+  background-color: tomato;
+  padding: 10px;
 }
 
 .main-section{
