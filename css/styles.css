@@ -301,6 +301,10 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
+#menu{
+    font-size: 3rem;
+}
+
 /* menu section */
 
 .card{
