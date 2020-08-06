@@ -225,11 +225,18 @@ $(document).ready(function () {
 
         // Show order modal
         $('#orderModal').modal('show');
+
+        // clear fields
+         document.querySelector('input[type="radio"]:checked').checked = false;
+       
+    
     }
 
     $("#order-btn").click(function () {
         placeOrder();
+       
+        
     });
 
-    document.getElementById("myForm").reset(); 
+  
 });
